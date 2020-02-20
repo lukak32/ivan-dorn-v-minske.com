@@ -12,8 +12,8 @@
     background-image: url(../images/header.png);
     width: 100%;
     height: 647px;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .header .header__title{
     padding-top: 60px;
@@ -240,8 +240,8 @@
     line-height: 1.2;
 }
 .button:hover{
-    transition: background-color 0.5s;
     background-color: black;
+    transition: background-color 0.5s;
 }
 .amphitheatre{width: 100%;height: auto;margin-top: 40px;display: none;position: relative;}
 .amphitheatre .amphitheatre__image{
@@ -249,11 +249,13 @@
     border-color: rgb(255, 204, 0);
     border-style: solid;
     background-color: rgb(255, 255, 255);
-    opacity: 0.29;
     box-shadow: 0 15px 46.74px 10.26px rgba(0, 0, 0, 0.11);
     padding: 67px 2% 63px;
     display: block;
     margin: 0 auto;
+    width: 87%;
+    height: auto;
+    box-sizing: border-box;
 }
 .buy__amphitheatre--open{
     display: block;
@@ -261,8 +263,8 @@
 .amphitheatre .amphitheatre__close{
     font-family: "Myriad Pro Regular", sans-serif;
     position: absolute;
-    top: 25px;
-    right: 114px;
+    top: 3.74%;
+    right: 10.94%;
     font-size: 32px;
     font-weight: bold;
     color: rgba(102, 102, 102, 0.412);
@@ -365,4 +367,198 @@
 .table .table__data{
     text-align: left;
     vertical-align: middle;
+}
+
+@media (max-width: 1200px){
+    .nav .nav__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav .nav__item{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1040px){
+    .main .main__about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 860px){
+    .header{
+        background-image: url("../images/header-m.png");
+    }
+    .about .about__vertical{
+        display: none;
+    }
+    .text-container{
+        width: 80%;
+        text-align: center;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .box{
+        text-align: left;
+        width: 400px;
+        margin-bottom: 12px;
+    }
+    .box .box__image {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    .box .box__title{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .buy .buy__container{
+        float: right;
+        margin-left: 0;
+        margin-right: 6.5%;
+    }
+    .buy .buy__button{
+        float: right;
+        margin-left: 0;
+        margin-right: 6.5%;
+    }
+    .amphitheatre .amphitheatre__image{
+        padding: 20px 2% 20px;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .footer .footer__map{
+        width: 100%;
+        height: 350px;
+    }
+    .footer .footer__contacts{
+        width: 100%;
+        padding-bottom: 45px;
+    }
+    .contacts .contacts__form{}
+    .contacts .contacts__table{
+    margin-top: -8px;
+    float: left;
+    margin-left: 32px;
+}
+    .form{
+    float: left;
+}
+    .table{}
+}
+
+@media (max-width: 730px){
+    .about .about__container{margin: 30px auto;}
+    .albums .albums__container{
+        float: none;
+        margin: 0 auto;
+    }
+    .albums .albums__title{text-align: center;}
+    .albums .albums__horizontal{
+        float: right;
+        margin-right: 50px;
+    }
+    .buy{display: flex; flex-direction: column;}
+    .buy .buy__container{float: none; margin: 54px auto 0;}
+    .buy .buy__button{
+        float: none;
+        margin: 30px auto 0;
+    }
+    .buy__title{width: 349px; margin: 0 auto;}
+    .footer .footer__contacts{padding-left: 0;}
+    .contacts__container{float: none;}
+    .contacts .contacts__container{
+        margin: 0 auto 16px;
+        padding: 0;
+    }
+    .form{
+        float: none;
+    }
+    .contacts .contacts__form{
+        margin: 0 auto 16px;
+    }
+    .contacts .contacts__table{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 420px){
+    .page .page__main{
+        margin-bottom: 30px;
+    }
+    .header{
+        height: 561px;
+        background-image: url("../images/header-s.png");
+        background-position: right;
+    }
+    .header .header__title{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .header .header__title--white{
+        padding-top: 0;
+    }
+    .container{
+        width: fit-content;
+    }
+    .about .about__container{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .container .container__title{
+        font-size: 60px;
+    }
+    .about .about__flex{
+        margin: 30px auto 0;
+    }
+    .main .main__about{
+        margin-bottom: 30px;
+    }
+    .box{
+        width: 90%;
+        margin: 0 auto 12px;
+    }
+    .box .box__image{
+        margin: 20px;
+    }
+    .albums__albums{
+        width: 80%;
+        margin: 15px auto 23px;
+        text-align: center;
+    }
+    .albums .albums__title{
+        font-size: 36px;
+    }
+    .discography .discography__item{
+        width: 50%;
+    }
+    .buy .buy__title{
+        font-size: 36px;
+        text-align: center;
+        width: fit-content;
+    }
+    .amphitheatre .amphitheatre__image{
+        width: 100%;
+    }
+    .form{
+        width: 80%;
+    }
+    .form .form__input{
+        width: 100%;
+    }
+    .form .form__input:nth-child(3){
+        margin-right: 0;
+    }
+    .form .form__input:nth-child(4){
+        width: 100%;
+    }
 }
