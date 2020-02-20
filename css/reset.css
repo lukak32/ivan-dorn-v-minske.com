@@ -138,6 +138,10 @@ button{
     cursor: pointer;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* memory */
 ::-webkit-scrollbar {
     width: 8px;
