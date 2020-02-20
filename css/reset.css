@@ -137,3 +137,27 @@ li{
 button{
     cursor: pointer;
 }
+
+/* memory */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(12, 58, 107, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(33, 76, 118, 0.3);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 198, 0);
+}
