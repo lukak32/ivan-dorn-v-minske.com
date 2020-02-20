@@ -24,7 +24,10 @@
     line-height: 82%;
     color: rgb(255, 198, 0);
 }
-.header .header__title--white{color: rgb(255, 255, 255);;padding-top: 0;}
+.header .header__title--white{
+    color: rgb(255, 255, 255);
+    padding-top: 0;
+}
 .header .header__nav{
     padding-top: 55px;
     padding-left: 48px;
@@ -88,7 +91,10 @@
 .about .about__flex{
     margin: 81px 7% 0 5%;
 }
-.container{float: left;width: 400px;}
+.container{
+    float: left;
+    width: 400px;
+}
 .container .container__name{
     font-size: 50px;
     font-family: "Myriad Pro Semibold", sans-serif;
@@ -109,7 +115,10 @@
 .container__title .container__title--black{
     color: black;
 }
-.horizontal{border-top: 1px solid #c5c5c5;width: 133px;}
+.horizontal{
+    border-top: 1px solid #c5c5c5;
+    width: 133px;
+}
 .vertical{
     border-right: 1px solid #c5c5c5;
     height: 133px;
@@ -186,8 +195,17 @@
     font-weight: bold;
     line-height: 1.2;
 }
-.albums__title .albums__title--black{color: black;}
-.albums .albums__albums{font-size: 9px;font-family: "Myriad Pro Regular", sans-serif;color: rgb(16, 16, 16);line-height: 1.2;margin-top: 15px;margin-bottom: 23px;}
+.albums__title .albums__title--black{
+    color: black;
+}
+.albums .albums__albums{
+    font-size: 9px;
+    font-family: "Myriad Pro Regular", sans-serif;
+    color: rgb(16, 16, 16);
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-bottom: 23px;
+}
 .albums__discography{}
 .discography{}
 .discography .discography__item{
@@ -243,7 +261,13 @@
     background-color: black;
     transition: background-color 0.5s;
 }
-.amphitheatre{width: 100%;height: auto;margin-top: 40px;display: none;position: relative;}
+.amphitheatre{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: none;
+    position: relative;
+}
 .amphitheatre .amphitheatre__image{
     border-width: 4.43px;
     border-color: rgb(255, 204, 0);
@@ -271,7 +295,11 @@
     cursor: pointer;
 }
 
-.footer{height: 680px;width: 100%;display: flex;}
+.footer{
+    height: 680px;
+    width: 100%;
+    display: flex;
+}
 .footer .footer__map{
     width: 41.74%;
     height: inherit;
@@ -327,18 +355,31 @@
     box-sizing: border-box;
     background-color: #2046B3;
 }
-.form .form__input--short{width: 160px;}
+.form .form__input--short{
+    width: 160px;
+}
 .form .form__input:nth-child(3){
     margin-right: 45px;
 }
 .form .form__input:nth-child(4){
     width: 207px;
 }
-.form .form__input:nth-child(6){height: 77px;margin-top: -7px;}
-.form .form__input::placeholder{color: #c5c5c5;}
-.form .form__input:hover{cursor: text;}
-.form .form__input:focus{background-color: white;}
-.form .form__input[type=text]{color: gray;}
+.form .form__input:nth-child(6){
+    height: 77px;
+    margin-top: -7px;
+}
+.form .form__input::placeholder{
+    color: #c5c5c5;
+}
+.form .form__input:hover{
+    cursor: text;
+}
+.form .form__input:focus{
+    background-color: white;
+}
+.form .form__input[type=text]{
+    color: gray;
+}
 .form .form__button--small{
     color: black;
     font-family: "Myriad Pro Regular", sans-serif;
@@ -358,7 +399,9 @@
     font-family: "Myriad Pro Сondensed", sans-serif;
     font-size: 16px;
 }
-.table .table__row{height: 34px;}
+.table .table__row{
+    height: 34px;
+}
 .table .table__head{
     text-align: left;
     width: 76px;
@@ -367,6 +410,12 @@
 .table .table__data{
     text-align: left;
     vertical-align: middle;
+}
+.table .table__link{
+    color: white;
+}
+.table .table__link:hover{
+    text-decoration: underline;
 }
 
 @media (max-width: 1200px){
@@ -456,25 +505,42 @@
 }
 
 @media (max-width: 730px){
-    .about .about__container{margin: 30px auto;}
+    .about .about__container{
+        margin: 30px auto;
+    }
     .albums .albums__container{
         float: none;
         margin: 0 auto;
     }
-    .albums .albums__title{text-align: center;}
+    .albums .albums__title{
+        text-align: center;
+    }
     .albums .albums__horizontal{
         float: right;
         margin-right: 50px;
     }
-    .buy{display: flex; flex-direction: column;}
-    .buy .buy__container{float: none; margin: 54px auto 0;}
+    .buy{
+        display: flex; 
+        flex-direction: column;
+    }
+    .buy .buy__container{
+        float: none; 
+        margin: 54px auto 0;
+    }
     .buy .buy__button{
         float: none;
         margin: 30px auto 0;
     }
-    .buy__title{width: 349px; margin: 0 auto;}
-    .footer .footer__contacts{padding-left: 0;}
-    .contacts__container{float: none;}
+    .buy__title{
+        width: 349px; 
+        margin: 0 auto;
+    }
+    .footer .footer__contacts{
+        padding-left: 0;
+    }
+    .contacts__container{
+        float: none;
+    }
     .contacts .contacts__container{
         margin: 0 auto 16px;
         padding: 0;
